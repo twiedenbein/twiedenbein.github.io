@@ -175,7 +175,7 @@ a {
 .sticky-element {
     position: -webkit-sticky;
     position: sticky;
-    top: -2px;
+    top: 0px;
     height: 30px;
     background-color: #666;
     font-size: 25px;
@@ -655,7 +655,7 @@ li.bmi-item:before {
     padding-top: 0.4em;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    z-index: 1001;
     flex-wrap: nowrap;
     transition: all 200ms ease-in-out;
 }
@@ -1077,4 +1077,35 @@ li.bmi-item:before {
 
 .not-available-text {
     color: #AEB1B6 !important;
+}
+
+/* Custom marker cluster colors - override default green with blue #1d31fa */
+.marker-cluster-small {
+    background-color: #1d31fa !important;
+    color: white !important;
+}
+
+.marker-cluster-small div {
+    background-color: #1d31fa !important;
+    color: white !important;
+}
+
+.marker-cluster-medium {
+    background-color: #1d31fa !important;
+    color: white !important;
+}
+
+.marker-cluster-medium div {
+    background-color: #1d31fa !important;
+    color: white !important;
+}
+
+.marker-cluster-large {
+    background-color: #1d31fa !important;
+    color: white !important;
+}
+
+.marker-cluster-large div {
+    background-color: #1d31fa !important;
+    color: white !important;
 }
