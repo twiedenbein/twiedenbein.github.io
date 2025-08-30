@@ -61,10 +61,10 @@
 					</div>
 
 					{{#if images}}
-						<div id="image-carousel" class="carousel" style="aspect-ratio: 4 / 3;">
+						<div id="image-carousel" class="image-carousel" style="aspect-ratio: 4 / 3;">
 							{{#each images}}
-								<div class="carousel-cell carousel-container">
-									<img data-flickity-lazyload={{url}} style="aspect-ratio: 4 / 3; width: inherit; object-fit:cover;">
+								<div class="image-carousel-cell">
+									<img data-flickity-lazyload={{url}} />
 									{{#if credit}}
 										<div class="carousel-image-credit-container">
 											<div class="carousel-image-credit">Photo submitted by {{credit}}</div> 
@@ -74,9 +74,9 @@
 							{{/each}}
 						</div>
 					{{else}}
-						<div id="image-carousel" class="carousel" style="aspect-ratio: 4 / 3;">
-							<div class="carousel-cell carousel-container">
-								<img data-flickity-lazyload="./s/NoImageAvailable.png" style="aspect-ratio: 4 / 3; width: inherit; object-fit:cover;">
+						<div id="image-carousel" class="image-carousel" style="aspect-ratio: 4 / 3;">
+							<div class="image-carousel-cell">
+								<img data-flickity-lazyload="./s/NoImageAvailable.png" />
 							</div>
 						</div>
 					{{/if}}
